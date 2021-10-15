@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--  grey  -->
+    <color name="grey_black_russian">#08080b</color>
+    <color name="grey_mortar">#555454</color>
+    <color name="grey_tiara">#bcc1c0</color>
+
+    <!--  green  -->
+    <color name="green_watercourse">#015b42</color>
+    <color name="green_aquamarine">#0ba16e</color>
+    <color name="green_highland">#838c5c</color>
+
+    <color name="green_persian">#00A289</color>
+
+    <!--  brown  -->
+    <color name="brown_bramble">#55381d</color>
+
+    <!-- blue  -->
+    <color name="blue_midnight_express">#1A1728</color>
+
+    <!-- violet -->
+    <color name="violet_haiti">#252331</color>
+
+    <!--  base color  -->
+    <color name="background_primary">@color/blue_midnight_express</color>
+    <color name="background_secondary">@color/grey_mortar</color>
+</resources>

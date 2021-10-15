@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/identityFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.fghilmany.dietmealapp.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_identityFragment"
+            app:destination="@id/identityFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/identityFragment"
+        android:name="com.fghilmany.dietmealapp.ui.identity.IdentityFragment"
+        android:label="fragment_identity"
+        tools:layout="@layout/fragment_identity" >
+        <action
+            android:id="@+id/action_identityFragment_to_dailyActivityFragment"
+            app:destination="@id/dailyActivityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dailyActivityFragment"
+        android:name="com.fghilmany.dietmealapp.ui.daily_activity.DailyActivityFragment"
+        android:label="fragment_daily_activity"
+        tools:layout="@layout/fragment_daily_activity" >
+        <action
+            android:id="@+id/action_dailyActivityFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.fghilmany.dietmealapp.ui.home.HomeActivity"
+        android:label="HomeActivity" />
+</navigation>
