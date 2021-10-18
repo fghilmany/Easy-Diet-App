@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.DietMealApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/violet_haiti</item>
+        <item name="colorPrimary">@color/green_malachite</item>
         <item name="colorPrimaryVariant">@color/blue_midnight_express</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
