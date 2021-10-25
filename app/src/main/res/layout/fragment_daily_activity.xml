@@ -1,14 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.daily_activity.DailyActivityFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tv_header_desc"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Isi formulir untuk membuat/menambahkan user"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/title_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Aktivitas sehari-hari"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header_desc" />
+
+    <RadioGroup
+        android:id="@+id/rg_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_activity">
+
+        <RadioButton
+            android:id="@+id/rb_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidur, Rebahan, Duduk, dsj."/>
+
+        <RadioButton
+            android:id="@+id/rb_very_very_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menulis, Mengetik, dsj."/>
+
+        <RadioButton
+            android:id="@+id/rb_very_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menyapu, Menjahit, Mencuci Piring, dsj."/>
+
+        <RadioButton
+            android:id="@+id/rb_low_to_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sekolah, Kuliah, Kerja Kantor, dsj."/>
+
+        <RadioButton
+            android:id="@+id/rb_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mencangkul, Menyambit Rumput, dsj."/>
+
+        <RadioButton
+            android:id="@+id/rb_heavy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menggergaji pohon dengan gergaji tangan, dsj."/>
+
+        <RadioButton
+            android:id="@+id/rb_very_heavy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mendaki Gunung, dsj."/>
+
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Selesai"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
