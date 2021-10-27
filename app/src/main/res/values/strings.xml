@@ -9,7 +9,9 @@
     <string name="welcome">Welcome...</string>
     <string name="dont_be_empty">Don\'t be Empty</string>
     <string name="height">Height</string>
+    <string name="height_colon">Height : </string>
     <string name="weight">Weight</string>
+    <string name="weight_colon">Weight : </string>
     <string name="name">Name</string>
     <string name="gender">Gender</string>
     <string name="male">Male</string>
@@ -24,4 +26,8 @@
     <string name="carbs">carbs</string>
     <string name="fat">fat</string>
     <string name="protein">protein</string>
+    <string name="title_meal">Meals</string>
+    <string name="search">Search</string>
+    <string name="edit">edit</string>
+    <string name="add_profile">add_profile</string>
 </resources>

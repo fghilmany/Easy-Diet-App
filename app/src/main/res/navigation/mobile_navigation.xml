@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_profile" />
 
     <fragment
-        android:id="@+id/navigation_setting"
-        android:name="com.fghilmany.dietmealapp.ui.home.setting.SettingFragment"
-        android:label="@string/title_setting"
-        tools:layout="@layout/fragment_setting" />
+        android:id="@+id/navigation_meal"
+        android:name="com.fghilmany.dietmealapp.ui.home.meal.MealFragment"
+        android:label="@string/title_meal"
+        tools:layout="@layout/fragment_meal" />
 </navigation>

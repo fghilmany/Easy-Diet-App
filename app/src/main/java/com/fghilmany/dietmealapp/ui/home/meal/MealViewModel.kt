@@ -1,10 +1,10 @@
-package com.fghilmany.dietmealapp.ui.home.setting
+package com.fghilmany.dietmealapp.ui.home.meal
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SettingViewModel : ViewModel() {
+class MealViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is notifications Fragment"
