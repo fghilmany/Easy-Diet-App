@@ -41,13 +41,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:hint="nama"
+        android:hint="@string/name"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_header_desc">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -60,7 +61,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:hint="Berat Badan"
+        android:hint="@string/weight"
         android:requiresFadingEdge="horizontal"
         app:suffixText="KG"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -69,8 +70,10 @@
         app:layout_constraintTop_toBottomOf="@+id/til_name">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_weight"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -81,7 +84,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:hint="Tinggi Badan"
+        android:hint="@string/height"
         android:requiresFadingEdge="horizontal"
         app:suffixText="CM"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -90,8 +93,10 @@
         app:layout_constraintTop_toBottomOf="@+id/til_weight">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_height"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -102,14 +107,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Jenis Kelamin"
+        android:text="@string/gender"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til_height" />
 
     <RadioGroup
-        android:id="@+id/rg_sex"
+        android:id="@+id/rg_gender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -120,16 +125,16 @@
         app:layout_constraintTop_toBottomOf="@+id/title_sex">
 
         <RadioButton
-            android:id="@+id/rb_men"
+            android:id="@+id/rb_male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Laki-laki"/>
+            android:text="@string/male"/>
 
         <RadioButton
-            android:id="@+id/rb_women"
+            android:id="@+id/rb_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Perempuan"
+            android:text="@string/female"
             android:layout_marginStart="32dp"/>
 
     </RadioGroup>

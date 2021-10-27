@@ -15,7 +15,9 @@
             app:destination="@id/identityFragment" />
         <action
             android:id="@+id/action_splashFragment_to_homeActivity"
-            app:destination="@id/homeActivity" />
+            app:destination="@id/homeActivity"
+            app:popUpTo="@id/homeActivity"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/identityFragment"
@@ -33,7 +35,9 @@
         tools:layout="@layout/fragment_daily_activity" >
         <action
             android:id="@+id/action_dailyActivityFragment_to_homeActivity"
-            app:destination="@id/homeActivity" />
+            app:destination="@id/homeActivity"
+            app:popUpTo="@id/homeActivity"
+            app:popUpToInclusive="true" />
     </fragment>
     <activity
         android:id="@+id/homeActivity"

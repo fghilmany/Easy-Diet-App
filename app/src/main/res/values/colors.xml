@@ -20,6 +20,7 @@
 
     <color name="green_persian">#00A289</color>
     <color name="green_malachite">#07C457</color>
+    <color name="green_malachite_semi_transparent">#CC07C457</color>
 
     <!--  brown  -->
     <color name="brown_bramble">#55381d</color>
@@ -27,8 +28,13 @@
     <!-- blue  -->
     <color name="blue_midnight_express">#1A1728</color>
 
+    <color name="blue_sapphire">#0A024F</color>
+
     <!-- violet -->
     <color name="violet_haiti">#252331</color>
+
+    <!--  red  -->
+    <color name="red_cardinal">#D6263D</color>
 
     <!--  base color  -->
     <color name="background_primary">@color/blue_midnight_express</color>

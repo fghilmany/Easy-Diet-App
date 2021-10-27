@@ -1,4 +1,4 @@
-package com.fghilmany.dietmealapp.ui.home.ui.home
+package com.fghilmany.dietmealapp.ui.home.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

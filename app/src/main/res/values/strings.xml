@@ -7,4 +7,21 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="welcome">Welcome...</string>
+    <string name="dont_be_empty">Don\'t be Empty</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="you_havent_chosen">You haven\'t chosen</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_setting">Setting</string>
+    <string name="hi">Hi,</string>
+    <string name="diet_plan">Diet Plan</string>
+    <string name="ready_to_some_calories_today">Ready to some calories today?</string>
+    <string name="kcal">kcal</string>
+    <string name="carbs">carbs</string>
+    <string name="fat">fat</string>
+    <string name="protein">protein</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.fghilmany.dietmealapp.ui.daily_activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,9 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.fghilmany.dietmealapp.R
 import com.fghilmany.dietmealapp.databinding.FragmentDailyActivityBinding
+import com.fghilmany.dietmealapp.ui.home.HomeActivity
 
 class DailyActivityFragment : Fragment() {
 
@@ -39,12 +40,13 @@ class DailyActivityFragment : Fragment() {
             btFinish.setOnClickListener {
 
                 if (identityPosition == null){
-                    Toast.makeText(requireContext(), "Kamu belum memilih", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), resources.getString(R.string.you_havent_chosen), Toast.LENGTH_SHORT).show()
                     return@setOnClickListener
                 }
 
-                val toIdentity = DailyActivityFragmentDirections.actionDailyActivityFragmentToHomeActivity()
-                view.findNavController().navigate(R.id.action_dailyActivityFragment_to_homeActivity)
+                val i = Intent(requireActivity(), HomeActivity::class.java)
+                startActivity(i)
+                requireActivity().finish()
             }
         }
     }

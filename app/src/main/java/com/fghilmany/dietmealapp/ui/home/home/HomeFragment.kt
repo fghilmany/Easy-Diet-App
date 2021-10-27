@@ -1,13 +1,12 @@
-package com.fghilmany.dietmealapp.ui.home.ui.home
+package com.fghilmany.dietmealapp.ui.home.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.fghilmany.dietmealapp.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -23,18 +22,26 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        return binding.root
+    }
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
-        return root
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        with(binding){
+            val dailyMealAdapter = DailyMealAdapter()
+            with(rvDailyMeal){
+                layoutManager = LinearLayoutManager(requireContext())
+                setHasFixedSize(true)
+                adapter = dailyMealAdapter
+            }
+        }
+
     }
 
     override fun onDestroyView() {
