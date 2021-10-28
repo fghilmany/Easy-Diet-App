@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.fghilmany.dietmealapp.R
 import com.fghilmany.dietmealapp.databinding.ItemMealsBinding
@@ -44,6 +45,11 @@ class MealAdapter: RecyclerView.Adapter<MealAdapter.ViewHolder>(), Filterable {
                     tvMeal.text = name
                     tvMealCalories.text = totalCalories.toString() + " " + itemView.context.resources.getString(R.string.kcal)
                 }
+            }
+
+            itemView.setOnClickListener {
+                val toDetailMeal = MealFragmentDirections.actionNavigationMealToDetailMealFragment()
+                it.findNavController().navigate(toDetailMeal)
             }
         }
 

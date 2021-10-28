@@ -30,4 +30,9 @@
     <string name="search">Search</string>
     <string name="edit">edit</string>
     <string name="add_profile">add_profile</string>
+    <string name="calories">calories</string>
+    <string name="portion">Portion</string>
+    <string name="serving">Serving</string>
+    <string name="meals">Meals</string>
+    <string name="nutrion_facts">Nutrion Facts</string>
 </resources>

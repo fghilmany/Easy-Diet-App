@@ -15,7 +15,11 @@
         android:id="@+id/navigation_profile"
         android:name="com.fghilmany.dietmealapp.ui.home.profile.ProfileFragment"
         android:label="@string/title_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_identityFragment2"
+            app:destination="@id/identityFragment2" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_meal"
@@ -25,10 +29,23 @@
         <action
             android:id="@+id/action_navigation_meal_to_addMealFragment"
             app:destination="@id/addMealFragment" />
+        <action
+            android:id="@+id/action_navigation_meal_to_detailMealFragment"
+            app:destination="@id/detailMealFragment" />
     </fragment>
     <fragment
         android:id="@+id/addMealFragment"
         android:name="com.fghilmany.dietmealapp.ui.home.meal.add_meal.AddMealFragment"
         android:label="fragment_add_meal"
         tools:layout="@layout/fragment_add_meal" />
+    <fragment
+        android:id="@+id/detailMealFragment"
+        android:name="com.fghilmany.dietmealapp.ui.home.meal.detail.DetailMealFragment"
+        android:label="fragment_detail_meal"
+        tools:layout="@layout/fragment_detail_meal" />
+    <fragment
+        android:id="@+id/identityFragment2"
+        android:name="com.fghilmany.dietmealapp.ui.identity.IdentityFragment"
+        android:label="fragment_identity"
+        tools:layout="@layout/fragment_identity" />
 </navigation>

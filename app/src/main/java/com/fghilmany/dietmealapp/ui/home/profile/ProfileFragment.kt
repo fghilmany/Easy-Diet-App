@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.fghilmany.dietmealapp.databinding.FragmentProfileBinding
@@ -72,6 +73,11 @@ class ProfileFragment : Fragment() {
                     super.onScrollStateChanged(recyclerView, newState)
                 }
             })
+
+            fabAddProfile.setOnClickListener {
+                val toAddProfile = ProfileFragmentDirections.actionNavigationProfileToIdentityFragment2()
+                findNavController().navigate(toAddProfile)
+            }
         }
     }
 
