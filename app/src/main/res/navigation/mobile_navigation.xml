@@ -21,5 +21,14 @@
         android:id="@+id/navigation_meal"
         android:name="com.fghilmany.dietmealapp.ui.home.meal.MealFragment"
         android:label="@string/title_meal"
-        tools:layout="@layout/fragment_meal" />
+        tools:layout="@layout/fragment_meal" >
+        <action
+            android:id="@+id/action_navigation_meal_to_addMealFragment"
+            app:destination="@id/addMealFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMealFragment"
+        android:name="com.fghilmany.dietmealapp.ui.home.meal.add_meal.AddMealFragment"
+        android:label="fragment_add_meal"
+        tools:layout="@layout/fragment_add_meal" />
 </navigation>

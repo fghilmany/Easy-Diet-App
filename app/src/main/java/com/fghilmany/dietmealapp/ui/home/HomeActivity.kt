@@ -1,6 +1,7 @@
 package com.fghilmany.dietmealapp.ui.home
 
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -31,9 +32,18 @@ class HomeActivity : AppCompatActivity() {
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
             )
         )*/
+
+        navController.addOnDestinationChangedListener{ _, destination, _ ->
+            when (destination.id){
+                R.id.navigation_home, R.id.navigation_meal, R.id.navigation_profile ->
+                    binding.navView.visibility = View.VISIBLE
+                else -> binding.navView.visibility = View.GONE
+            }
+        }
         NavigationUI.setupWithNavController(navView, navController)
 
 //        setupActionBarWithNavController(navController, appBarConfiguration)
 //        navView.setupWithNavController(navController)
     }
+
 }

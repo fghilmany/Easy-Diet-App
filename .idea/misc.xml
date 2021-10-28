@@ -14,12 +14,16 @@
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.340625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12164296998420221" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_add_meal.xml" value="0.34375" />
         <entry key="app/src/main/res/layout/fragment_daily_activity.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_identity.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_meal.xml" value="0.34375" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.531104199066874" />
         <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_daily_meals.xml" value="0.3954834973943254" />
+        <entry key="app/src/main/res/layout/item_meals.xml" value="0.75" />
+        <entry key="app/src/main/res/layout/item_profile.xml" value="0.34375" />
         <entry key="app/src/main/res/layout/item_user.xml" value="0.45870535714285715" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2140625" />

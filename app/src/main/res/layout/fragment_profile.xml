@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.profile.ProfileFragment">
+    tools:context=".ui.home.profile.ProfileFragment"
+    android:layout_marginBottom="?attr/actionBarSize">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -36,6 +37,7 @@
             android:src="@drawable/ic_settings"
             android:clickable="true"
             android:focusable="true"
+            app:tint="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/til_search"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toTopOf="@+id/til_search"
